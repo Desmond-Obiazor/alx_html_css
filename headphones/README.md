@@ -1,0 +1,1 @@
+In this project I'll be practicing advanced css on a headphone website.
