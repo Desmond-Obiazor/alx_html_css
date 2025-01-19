@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+.Header{
+    display: flex ;
+    /* background-color: aqua; */
+}
+ul{
+    display: flex;
+    column-gap: 50px;    
+}
+
+ul li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.hero {
+    height: 100vh;
+    background-image: url("../headphones/images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sub-hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    /* background-color: bisque; */
+}
+.hero-items {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.hero-items h1 {
+    color: white !important;
+    font-size: 40px;
+}
+.sub-text{
+    color: white !important;
+    font-size: 20px;
+}
+
+.button {
+    background-color: orange;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.button2 {
+    background-color: orange;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    /* margin-top: 50px; */
+    margin-bottom: 70px;
+}
+
+.text-elang {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+#whatwedo {
+    /* background-color: red; */
+    padding: 20px 0px;
+}
+.what-do {
+    width: 80%;
+    padding: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.do-1 {
+    /* background-color: blueviolet; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 30px;
+    padding: 10px;
+}
+
+.do-1 h1 {
+    font-size: 40px;
+}
+
+.do-1 p {
+    font-size: 16px;
+    text-align: center;
+} 
+
+.article {
+    display: flex;
+    column-gap: 50px;
+    width: 100%;
+    justify-content: center;
+    /* background-color: beige; */
+    margin-top: 15%;
+    align-items: center;
+}
+
+.article-box {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.article-box2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    padding: 30px;
+    background-image: url("../headphones/images/pentagone.png");
+    background-size: cover;
+}
+
+#ourResults{
+    padding: 30px;
+    background-image: url("../headphones/images/headphones_hero_2.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contactus {
+    padding: 40px;
+    /* background-color: aquamarine; */
+}
+.contact {
+    width: 70%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+input {
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form {
+    /* background-color: blueviolet; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 30px; */
+}
+
+.foot {
+    width: 100%;
+    background-color: #061437;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    color: white;
+}
+
+.jid {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .Header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero-items {
+        width: 70%; /* Adjust hero content for tablets */
+    }
+
+    .what-do {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .do-1 {
+        width: 90%;
+    }
+
+    .article {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .article-box,
+    .article-box2 {
+        width: 45%;
+    }
+
+    #contactus .contact {
+        width: 90%;
+    }
+
+    input {
+        width: 80%; /* Adjust input field size for tablets */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 40px; */
+    }
+    .Header img {
+        width: 50%;
+    }
+
+    ul {
+        flex-direction: column;
+        row-gap: 15px;
+        margin-top: 40px;
+    }
+
+    .hero {
+        background-size: cover;
+    }
+
+    .hero-items {
+        width: 90%; /* Adjust hero content for mobile */
+    }
+
+    .hero-items h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sub-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .text-elang {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .what-do {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .do-1 {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .article {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .article-box,
+    .article-box2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #contactus .contact {
+        width: 95%;
+    }
+
+    input {
+        width: 90%; /* Adjust input field size for mobile */
+    }
+
+    .footer {
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .jid {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .jid img {
+        width: 30px; /* Resize icons for smaller screens */
+    }
+
+    .foot {
+        padding: 10px;
+        text-align: center;
+    }
+}
+a:hover{
+    color: orange;
+    
+}
